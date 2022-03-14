@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="68.0" layoutY="65.0" prefHeight="18.0" prefWidth="108.0" text="Do you smoke ?" />
       <RadioButton fx:id="rBt_smoke_yes" layoutX="206.0" layoutY="65.0" mnemonicParsing="false" text="Yes">
@@ -26,33 +26,33 @@
          </toggleGroup>
       </RadioButton>
       <RadioButton fx:id="rBt_vegeterian_no" layoutX="256.0" layoutY="108.0" mnemonicParsing="false" text="No" toggleGroup="$vegeterian" />
-      <RadioButton layoutX="210.0" layoutY="151.0" mnemonicParsing="false" text="Europe">
+      <RadioButton fx:id="rBt_food_Eu" layoutX="210.0" layoutY="151.0" mnemonicParsing="false" text="Europe">
          <toggleGroup>
             <ToggleGroup fx:id="speciality" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="275.0" layoutY="151.0" mnemonicParsing="false" text="Romania" />
-      <RadioButton layoutX="351.0" layoutY="150.0" mnemonicParsing="false" text="Greek" />
-      <RadioButton layoutX="411.0" layoutY="150.0" mnemonicParsing="false" text="Asia" />
-      <RadioButton layoutX="462.0" layoutY="150.0" mnemonicParsing="false" text="Arabia" />
-      <RadioButton layoutX="527.0" layoutY="151.0" mnemonicParsing="false" text="Vietnam" />
-      <RadioButton fx:id="rBt_vegeterian_yes1" layoutX="210.0" layoutY="191.0" mnemonicParsing="false" text="Yes">
+      <RadioButton fx:id="rBt_food_Ro" layoutX="275.0" layoutY="151.0" mnemonicParsing="false" text="Romania" />
+      <RadioButton fx:id="rBt_food_Gr" layoutX="351.0" layoutY="150.0" mnemonicParsing="false" text="Greek" />
+      <RadioButton fx:id="rBt_food_As" layoutX="411.0" layoutY="150.0" mnemonicParsing="false" text="Asia" />
+      <RadioButton fx:id="rBt_food_Ab" layoutX="462.0" layoutY="150.0" mnemonicParsing="false" text="Arabia" />
+      <RadioButton fx:id="rBt_food_Vt" layoutX="527.0" layoutY="151.0" mnemonicParsing="false" text="Vietnam" />
+      <RadioButton fx:id="rBt_hurry_yes" layoutX="210.0" layoutY="191.0" mnemonicParsing="false" text="Yes">
          <toggleGroup>
             <ToggleGroup fx:id="hurry" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="rBt_vegeterian_no1" layoutX="256.0" layoutY="191.0" mnemonicParsing="false" text="No" toggleGroup="$hurry" />
-      <RadioButton fx:id="rBt_vegeterian_yes11" layoutX="220.0" layoutY="234.0" mnemonicParsing="false" text="Yes">
+      <RadioButton fx:id="rBt_hurry_yes" layoutX="256.0" layoutY="191.0" mnemonicParsing="false" text="No" toggleGroup="$hurry" />
+      <RadioButton fx:id="rBt_Emonth_yes" layoutX="220.0" layoutY="234.0" mnemonicParsing="false" text="Yes">
          <toggleGroup>
             <ToggleGroup fx:id="salary" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="rBt_vegeterian_no11" layoutX="269.0" layoutY="234.0" mnemonicParsing="false" text="No" toggleGroup="$salary" />
-      <RadioButton fx:id="rBt_vegeterian_yes111" layoutX="210.0" layoutY="275.0" mnemonicParsing="false" text="Yes">
+      <RadioButton fx:id="rBt_Emonth_no" layoutX="269.0" layoutY="234.0" mnemonicParsing="false" text="No" toggleGroup="$salary" />
+      <RadioButton fx:id="rBt_weekend_yes" layoutX="210.0" layoutY="275.0" mnemonicParsing="false" text="Yes">
          <toggleGroup>
             <ToggleGroup fx:id="meet" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="rBt_vegeterian_no111" layoutX="269.0" layoutY="275.0" mnemonicParsing="false" text="No" toggleGroup="$meet" />
+      <RadioButton fx:id="rBt_weekend_no" layoutX="269.0" layoutY="275.0" mnemonicParsing="false" text="No" toggleGroup="$meet" />
    </children>
 </AnchorPane>
