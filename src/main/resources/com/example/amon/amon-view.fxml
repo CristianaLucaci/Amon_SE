@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="68.0" layoutY="65.0" prefHeight="18.0" prefWidth="108.0" text="Do you smoke ?" />
+      <RadioButton fx:id="rBt_smoke_yes" layoutX="206.0" layoutY="65.0" mnemonicParsing="false" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="smoke" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rBt_smoke_no" layoutX="256.0" layoutY="65.0" mnemonicParsing="false" text="No" toggleGroup="$smoke" />
+      <Label layoutX="68.0" layoutY="108.0" prefHeight="18.0" prefWidth="126.0" text="Are you a vegeterian ?" />
+      <Label layoutX="68.0" layoutY="150.0" prefHeight="18.0" prefWidth="138.0" text="What food do you like ?" />
+      <Label layoutX="68.0" layoutY="191.0" prefHeight="18.0" prefWidth="108.0" text="Are you in a hurry ?" />
+      <Label layoutX="68.0" layoutY="234.0" prefHeight="18.0" prefWidth="152.0" text="It is the final of the month ?" />
+      <Label layoutX="68.0" layoutY="275.0" prefHeight="18.0" prefWidth="108.0" text="It is weekend ?" />
+      <RadioButton fx:id="rBt_vegeterian_yes" layoutX="206.0" layoutY="108.0" mnemonicParsing="false" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="vegeterian" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rBt_vegeterian_no" layoutX="256.0" layoutY="108.0" mnemonicParsing="false" text="No" toggleGroup="$vegeterian" />
+      <RadioButton fx:id="rBt_food_Eu" layoutX="210.0" layoutY="151.0" mnemonicParsing="false" text="Europe">
+         <toggleGroup>
+            <ToggleGroup fx:id="speciality" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rBt_food_Ro" layoutX="275.0" layoutY="151.0" mnemonicParsing="false" text="Romania" />
+      <RadioButton fx:id="rBt_food_Gr" layoutX="351.0" layoutY="150.0" mnemonicParsing="false" text="Greek" />
+      <RadioButton fx:id="rBt_food_As" layoutX="411.0" layoutY="150.0" mnemonicParsing="false" text="Asia" />
+      <RadioButton fx:id="rBt_food_Ab" layoutX="462.0" layoutY="150.0" mnemonicParsing="false" text="Arabia" />
+      <RadioButton fx:id="rBt_food_Vt" layoutX="527.0" layoutY="151.0" mnemonicParsing="false" text="Vietnam" />
+      <RadioButton fx:id="rBt_hurry_yes" layoutX="210.0" layoutY="191.0" mnemonicParsing="false" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="hurry" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rBt_hurry_yes" layoutX="256.0" layoutY="191.0" mnemonicParsing="false" text="No" toggleGroup="$hurry" />
+      <RadioButton fx:id="rBt_Emonth_yes" layoutX="220.0" layoutY="234.0" mnemonicParsing="false" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="salary" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rBt_Emonth_no" layoutX="269.0" layoutY="234.0" mnemonicParsing="false" text="No" toggleGroup="$salary" />
+      <RadioButton fx:id="rBt_weekend_yes" layoutX="210.0" layoutY="275.0" mnemonicParsing="false" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="meet" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rBt_weekend_no" layoutX="269.0" layoutY="275.0" mnemonicParsing="false" text="No" toggleGroup="$meet" />
+   </children>
+</AnchorPane>
