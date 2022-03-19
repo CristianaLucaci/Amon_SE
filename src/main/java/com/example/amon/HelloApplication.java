@@ -1,5 +1,6 @@
 package com.example.amon;
 
+import com.example.amon.parser.Data;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -15,9 +16,13 @@ public class HelloApplication extends Application {
         stage.setTitle("Amon");
         stage.setScene(scene);
         stage.show();
+        Data.getData();
     }
 
     public static void main(String[] args) {
+
         launch();
+
+
     }
 }
