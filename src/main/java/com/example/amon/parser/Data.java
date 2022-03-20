@@ -32,7 +32,7 @@ public class Data {
             rule.setHead(head);
             KnowledgeBase.addRule(rule);
         }
-        PremiseState.initialise();
+
     }
 
     public static void getPremises(List<String> premises) {
