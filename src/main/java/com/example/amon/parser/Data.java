@@ -1,4 +1,5 @@
 package com.example.amon.parser;
+import com.example.amon.inference.PremiseState;
 import com.example.amon.model.KnowledgeBase;
 import com.example.amon.model.Rule;
 import com.google.gson.*;
@@ -29,8 +30,9 @@ public class Data {
             getPremises(premises);
             rule.setPremises(premises);
             rule.setHead(head);
-            System.out.println(rule);
+            KnowledgeBase.addRule(rule);
         }
+        PremiseState.initialise();
     }
 
     public static void getPremises(List<String> premises) {
@@ -40,7 +42,6 @@ public class Data {
         }
     }
     public static void getData() {
-        KnowledgeBase knowledgeBase = new KnowledgeBase();
 
         JsonParser parser  = new JsonParser();
         try {
