@@ -1,5 +1,4 @@
 package com.example.amon.parser;
-import com.example.amon.inference.PremiseState;
 import com.example.amon.model.KnowledgeBase;
 import com.example.amon.model.Rule;
 import com.google.gson.*;

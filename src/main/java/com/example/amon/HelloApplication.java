@@ -1,7 +1,8 @@
 package com.example.amon;
 
+import com.example.amon.inference.Conclusion;
 import com.example.amon.inference.ForwardChaining;
-import com.example.amon.inference.PremiseState;
+import com.example.amon.model.KnowledgeBase;
 import com.example.amon.parser.Data;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -20,8 +21,10 @@ public class HelloApplication extends Application {
         stage.show();
 
         Data.getData();
-        PremiseState.initialise();
-        //ForwardChaining.generateConclusion();
+        Conclusion.initialise();
+
+        ForwardChaining.generateConclusion();
+        System.out.println(ForwardChaining.getResult());
     }
 
     public static void main(String[] args) {

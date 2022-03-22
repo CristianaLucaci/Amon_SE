@@ -1,51 +1,46 @@
 package com.example.amon.inference;
 
+import com.example.amon.model.KnowledgeBase;
+
 public class ForwardChaining {
 
-
-    public static void rule_langa_gara() {
-        if(PremiseState.allPremisesState.get("merge_cu_trenul") &&
-                PremiseState.allPremisesState.get("este_grabit") &&
-                    PremiseState.allPremisesState.get("este_infometat")) {
-            PremiseState.allPremisesState.replace("langa_gara",true);
-        }
-
+    public static String getResult() {
+        return result;
     }
 
-    public static void rule_pe_malul_begai() {
-        if(PremiseState.allPremisesState.get("priveliste_spre_rau") &&
-                PremiseState.allPremisesState.get("intalnire_romantica")) {
-            PremiseState.allPremisesState.replace("pe_malul_begai",true);
-        }
-    }
-
-    public static void rule_langa_mall() {
-        if(PremiseState.allPremisesState.get("shopping") &&
-                PremiseState.allPremisesState.get("este_intalnire")) {
-            System.out.println("AIACIII");
-            PremiseState.allPremisesState.replace("langa_mall",true);
-        }
-    }
-
-    public static void rule_Restauran_A() {
-        if(PremiseState.allPremisesState.get("langa_gara") &&
-                PremiseState.allPremisesState.get("fumator") &&
-                    PremiseState.allPremisesState.get("buget_mic") &&
-                         PremiseState.allPremisesState.get("vegetarian")) {
-            PremiseState.allPremisesState.replace("Restauran_A",true);
-        }
-
-    }
+    private static String result;
 
     public static void generateConclusion() {
 
-
         boolean flag = false;
 
-        while(!flag) {
+        int[] counter = new int[KnowledgeBase.getRules().size()];
 
+        for(int i = 0 ; i < KnowledgeBase.getRules().size();i++) {
+            counter[i] = KnowledgeBase.getRules().get(i).getPremises().size();
         }
 
+        while(!KnowledgeBase.getFacts().isEmpty() && !flag) {
+
+            String fact = KnowledgeBase.getFacts().remove(0);
+            for(int i = 0 ; i < KnowledgeBase.getRules().size() ; i++) {
+                if(KnowledgeBase.getRules().get(i).getPremises().contains(fact)) {
+                    counter[i]--;
+
+                    if(counter[i] == 0) {
+                        if(Conclusion.allConclusions.contains(KnowledgeBase.getRules().get(i).getHead())) {
+                            flag = true;
+                            result = KnowledgeBase.getRules().get(i).getHead();
+                        } else {
+                            KnowledgeBase.addFact(KnowledgeBase.getRules().get(i).getHead());
+                        }
+                    }
+                }
+            }
+        }
+        if (KnowledgeBase.getFacts().isEmpty() && !flag) {
+            result = "indecisive conclusion";
+        }
     }
 
 }
