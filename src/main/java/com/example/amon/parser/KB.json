@@ -1,20 +1,52 @@
 {
 	"rules": [
-				{	
-					"premises": [ "merge_cu_trenul" , "este_grabit" , "este_infometat"] ,
-					"head": "langa_gara"
-					} , 
-				{	
-					"premises": [ "priveliste_spre_rau" , "intalnire_romantica"] ,
-					"head": "pe_malul_begai"
-					} , 
-				{	
-					"premises": [ "shopping" , "este_intalnire"] ,
-					"head": "langa_mall"
-					} , 
-				{	
-					"premises": [ "langa_gara" , "fumator" , "buget_mic" , "vegetarian"] ,
-					"head": "Restauran_A"
-					}
-				]
+		{
+			"premises": [ "merge_cu_trenul" , "este_grabit" , "este_infometat"] ,
+			"head": "langa_gara"
+		} ,
+		{
+			"premises": [ "priveliste_spre_rau" , "intalnire_romantica"] ,
+			"head": "pe_malul_begai"
+		} ,
+		{
+			"premises": [ "shopping" , "este_intalnire"] ,
+			"head": "langa_mall"
+		} ,
+		{
+			"premises": [ "vizita_pe_centru" , "este_grabit"] ,
+			"head": "langa_centrul_orasului"
+		} ,
+		{
+			"premises": [ "langa_gara" , "intalnire_cu_prietenii_si_familia" , "mancare_traditionala", "buget_mic", "fumator"] ,
+			"head": "Thalia"
+		} ,
+		{
+			"premises": [ "langa_gara" , "intalnire_romantica" , "mancare_specific_italienesc "] ,
+			"head": "Casa_Iosefin"
+		} ,
+		{
+			"premises": [ "langa_gara" , "intalnire_de_afaceri" , "mancare_traditionala", "mancare_traditionala", "fumator"] ,
+			"head": "Trattoriaccia"
+		} ,
+		{
+			"premises": [ "langa_centrul_orasului" , "intalnire_de_afaceri" , "mancare_traditionala", "mancare_vegetariana", "mancare_specific_italienesc"] ,
+			"head": "Locanda_Del_Corso"
+		} ,
+		{
+			"premises": [ "langa_centrul_orasului" , "intalnire_cu_prietenii_si_familia" , "mancare_greceasca", "buget_mic", "fumator"] ,
+			"head": "Papper_Steak_Shake"
+		} ,
+		{
+			"premises": [ "langa_centrul_orasului" , "intalnire_romantica" , "mancare_specific_american"] ,
+			"head": "Neata_Omlette_Bistro"
+		} ,
+		{
+			"premises": [ "langa_mall" , "intalnire_cu_prietenii_si_familia" , "mancare_traditionala", "fumator"] ,
+			"head": "Manufaktura"
+		} ,
+		{
+			"premises": [ "langa_mall" , "intalnire_de_afaceri" , "mancare_traditionala", "fumator"] ,
+			"head": "Fabrika"
+		}
+	]
 }
