@@ -1,7 +1,7 @@
 {
 	"rules": [
 		{
-			"premises": [ "merge_cu_trenul" , "este_grabit" , "este_infometat"] ,
+			"premises": [ "merge_cu_trenul" , "este_grabit" ] ,
 			"head": "langa_gara"
 		} ,
 		{

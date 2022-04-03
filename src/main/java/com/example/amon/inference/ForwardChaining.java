@@ -2,6 +2,9 @@ package com.example.amon.inference;
 
 import com.example.amon.model.KnowledgeBase;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ForwardChaining {
 
     public static String getResult() {
@@ -20,9 +23,11 @@ public class ForwardChaining {
             counter[i] = KnowledgeBase.getRules().get(i).getPremises().size();
         }
 
-        while(!KnowledgeBase.getFacts().isEmpty() && !flag) {
+        List<String> aux = new ArrayList<>();
+        aux.addAll(KnowledgeBase.getFacts());
+        while(!aux.isEmpty() && !flag) {
 
-            String fact = KnowledgeBase.getFacts().remove(0);
+            String fact = aux.remove(0);
             for(int i = 0 ; i < KnowledgeBase.getRules().size() ; i++) {
                 if(KnowledgeBase.getRules().get(i).getPremises().contains(fact)) {
                     counter[i]--;
@@ -32,13 +37,15 @@ public class ForwardChaining {
                             flag = true;
                             result = KnowledgeBase.getRules().get(i).getHead();
                         } else {
-                            KnowledgeBase.addFact(KnowledgeBase.getRules().get(i).getHead());
+                            aux.add(KnowledgeBase.getRules().get(i).getHead());
                         }
                     }
                 }
             }
         }
-        if (KnowledgeBase.getFacts().isEmpty() && !flag) {
+        System.out.println(aux);
+        System.out.println(KnowledgeBase.getFacts());
+        if (aux.isEmpty() && !flag) {
             result = "indecisive conclusion";
         }
     }

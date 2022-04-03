@@ -1,47 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<SplitPane dividerPositions="0.31605351170568563" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<SplitPane dividerPositions="0.342809364548495" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.amon.OptionsController">
   <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="197.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="648.0" prefWidth="201.0">
          <children>
-            <Label layoutX="12.0" layoutY="24.0" text="Are you in a hurry?">
+            <Label layoutX="24.0" layoutY="22.0" text="Are you in a hurry?">
                <font>
                   <Font name="Cambria" size="17.0" />
                </font>
             </Label>
-            <Label layoutX="11.0" layoutY="67.0" text="Right now, you are:">
+            <Label layoutX="23.0" layoutY="68.0" text="Right now, you are:">
                <font>
                   <Font name="Cambria" size="17.0" />
                </font>
             </Label>
-            <Label layoutX="6.0" layoutY="179.0" text="Are you going to have a:">
+            <Label layoutX="13.0" layoutY="159.0" text="Are you going to have a:">
                <font>
                   <Font name="Cambria" size="17.0" />
                </font>
             </Label>
-            <Label layoutX="50.0" layoutY="260.0" text="Do you like:">
+            <Label layoutX="57.0" layoutY="258.0" text="Do you like:">
                <font>
                   <Font name="Cambria" size="17.0" />
                </font>
             </Label>
-            <Label layoutX="15.0" layoutY="368.0" text="Are you a vegeatrian?">
+            <Label layoutX="23.0" layoutY="371.0" text="Are you a vegeatrian?">
                <font>
                   <Font name="Cambria" size="17.0" />
                </font>
             </Label>
-            <Label layoutX="28.0" layoutY="405.0" text="Are you smoking?">
+            <Label layoutX="35.0" layoutY="410.0" text="Are you smoking?">
                <font>
                   <Font name="Cambria" size="17.0" />
                </font>
             </Label>
-            <Label layoutX="14.0" layoutY="439.0" text="Prefer smaller prices?">
+            <Label layoutX="20.0" layoutY="447.0" text="Prefer smaller prices?">
+               <font>
+                  <Font name="Cambria" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="565.0" text="Your restaurant option is:">
                <font>
                   <Font name="Cambria" size="17.0" />
                </font>
@@ -49,28 +57,46 @@
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="435.0">
          <children>
-            <Button layoutX="294.0" layoutY="443.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="95.0" text="Submit" />
-            <CheckBox layoutX="22.0" layoutY="141.0" mnemonicParsing="false" text="none of the above" />
-            <RadioButton layoutX="25.0" layoutY="24.0" mnemonicParsing="false" text="yes" />
-            <RadioButton layoutX="97.0" layoutY="24.0" mnemonicParsing="false" text="no" />
-            <CheckBox layoutX="22.0" layoutY="68.0" mnemonicParsing="false" text="at the train station in Timisoara" />
-            <CheckBox layoutX="231.0" layoutY="105.0" mnemonicParsing="false" text="walking by the river" />
-            <CheckBox layoutX="22.0" layoutY="105.0" mnemonicParsing="false" text="just finishing shopping" />
-            <CheckBox layoutX="231.0" layoutY="68.0" mnemonicParsing="false" text="visiting the city center" />
-            <CheckBox layoutX="22.0" layoutY="182.0" mnemonicParsing="false" text="romantic date" />
-            <CheckBox layoutX="231.0" layoutY="182.0" mnemonicParsing="false" text="business meeting" />
-            <CheckBox layoutX="22.0" layoutY="215.0" mnemonicParsing="false" text="friends and family meal" />
-            <CheckBox layoutX="22.0" layoutY="262.0" mnemonicParsing="false" text="romantic date" />
-            <CheckBox layoutX="231.0" layoutY="262.0" mnemonicParsing="false" text="romantic date" />
-            <CheckBox layoutX="22.0" layoutY="298.0" mnemonicParsing="false" text="romantic date" />
-            <CheckBox layoutX="231.0" layoutY="298.0" mnemonicParsing="false" text="romantic date" />
-            <CheckBox layoutX="22.0" layoutY="337.0" mnemonicParsing="false" text="romantic date" />
-            <RadioButton layoutX="22.0" layoutY="376.0" mnemonicParsing="false" text="yes" />
-            <RadioButton layoutX="93.0" layoutY="376.0" mnemonicParsing="false" text="no" />
-            <RadioButton layoutX="22.0" layoutY="410.0" mnemonicParsing="false" text="yes" />
-            <RadioButton layoutX="93.0" layoutY="410.0" mnemonicParsing="false" text="no" />
-            <RadioButton layoutX="22.0" layoutY="447.0" mnemonicParsing="false" text="yes" />
-            <RadioButton layoutX="93.0" layoutY="447.0" mnemonicParsing="false" text="no" />
+            <Button fx:id="submitButton" layoutX="135.0" layoutY="487.0" mnemonicParsing="false" onAction="#getFacts" prefHeight="36.0" prefWidth="95.0" text="Submit" />
+            <RadioButton fx:id="rBt_hurry_yes" layoutX="25.0" layoutY="24.0" mnemonicParsing="false" onAction="#hurryState" text="yes">
+               <toggleGroup>
+                  <ToggleGroup fx:id="hurry" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="rBt_hurry_no" layoutX="97.0" layoutY="24.0" mnemonicParsing="false" onAction="#hurryState" text="no" toggleGroup="$hurry" />
+            <CheckBox fx:id="cb_romanian" layoutX="22.0" layoutY="262.0" mnemonicParsing="false" onAction="#getFoodPreferance" text="Romanian traditional food" />
+            <CheckBox fx:id="cb_italian" layoutX="231.0" layoutY="262.0" mnemonicParsing="false" onAction="#getFoodPreferance" text="Italian food" />
+            <CheckBox fx:id="cb_chinese" layoutX="22.0" layoutY="298.0" mnemonicParsing="false" onAction="#getFoodPreferance" text="Chinese food" />
+            <CheckBox fx:id="cb_greek" layoutX="231.0" layoutY="298.0" mnemonicParsing="false" onAction="#getFoodPreferance" text="Greek Food" />
+            <CheckBox fx:id="cb_american" layoutX="22.0" layoutY="337.0" mnemonicParsing="false" onAction="#getFoodPreferance" text="American Food" />
+            <RadioButton fx:id="rBt_vegetarian_yes" layoutX="22.0" layoutY="376.0" mnemonicParsing="false" onAction="#getVegetarian" text="yes">
+               <toggleGroup>
+                  <ToggleGroup fx:id="vegetarian" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="rBt_vegetarian_no" layoutX="93.0" layoutY="376.0" mnemonicParsing="false" onAction="#getVegetarian" text="no" toggleGroup="$vegetarian" />
+            <RadioButton fx:id="rBt_smoking_yes" layoutX="22.0" layoutY="410.0" mnemonicParsing="false" onAction="#getSmoking" text="yes">
+               <toggleGroup>
+                  <ToggleGroup fx:id="smoking" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="rBt_smoking_no" layoutX="93.0" layoutY="410.0" mnemonicParsing="false" onAction="#getSmoking" text="no" toggleGroup="$smoking" />
+            <RadioButton fx:id="rBt_prices_yes" layoutX="22.0" layoutY="447.0" mnemonicParsing="false" onAction="#getPrices" text="yes">
+               <toggleGroup>
+                  <ToggleGroup fx:id="prices" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="rBt_prices_no" layoutX="93.0" layoutY="447.0" mnemonicParsing="false" onAction="#getPrices" text="no" toggleGroup="$prices" />
+            <RadioButton fx:id="rBt_train_station" layoutX="22.0" layoutY="68.0" mnemonicParsing="false" onAction="#getLocation" text="at the train station in Timisoara">
+               <toggleGroup>
+                  <ToggleGroup fx:id="location" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="rBt_center" layoutX="231.0" layoutY="68.0" mnemonicParsing="false" onAction="#getLocation" text="visiting the city center" toggleGroup="$location" />
+            <RadioButton fx:id="rBt_shopping" layoutX="23.0" layoutY="114.0" mnemonicParsing="false" onAction="#getLocation" text="just finished shopping" toggleGroup="$location" />
+            <RadioButton fx:id="rBt_river" layoutX="230.0" layoutY="114.0" mnemonicParsing="false" onAction="#getLocation" text="walking by the river" toggleGroup="$location" />
+            <RadioButton fx:id="rBt_romantic_date" layoutX="20.0" layoutY="165.0" mnemonicParsing="false" onAction="#getDate" text="romantic date">
+               <toggleGroup>
+                  <ToggleGroup fx:id="date" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="rBt_business_meeting" layoutX="226.0" layoutY="165.0" mnemonicParsing="false" onAction="#getDate" text="business meeting" toggleGroup="$date" />
+            <RadioButton fx:id="rBt_family_meal" layoutX="19.0" layoutY="207.0" mnemonicParsing="false" onAction="#getDate" text="friends and family meal" toggleGroup="$date" />
+            <TextArea fx:id="result" layoutX="83.0" layoutY="550.0" prefHeight="50.0" prefWidth="200.0" />
          </children></AnchorPane>
   </items>
 </SplitPane>
