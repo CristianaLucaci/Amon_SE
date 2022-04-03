@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.31605351170568563" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="197.0">
+         <children>
+            <Label layoutX="12.0" layoutY="24.0" text="Are you in a hurry?">
+               <font>
+                  <Font name="Cambria" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="67.0" text="Right now, you are:">
+               <font>
+                  <Font name="Cambria" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="179.0" text="Are you going to have a:">
+               <font>
+                  <Font name="Cambria" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="260.0" text="Do you like:">
+               <font>
+                  <Font name="Cambria" size="17.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="435.0">
+         <children>
+            <CheckBox layoutX="22.0" layoutY="141.0" mnemonicParsing="false" text="none of the above" />
+            <RadioButton layoutX="25.0" layoutY="24.0" mnemonicParsing="false" text="yes" />
+            <RadioButton layoutX="97.0" layoutY="24.0" mnemonicParsing="false" text="no" />
+            <CheckBox layoutX="22.0" layoutY="68.0" mnemonicParsing="false" text="at the train station in Timisoara" />
+            <CheckBox layoutX="231.0" layoutY="105.0" mnemonicParsing="false" text="walking by the river" />
+            <CheckBox layoutX="22.0" layoutY="105.0" mnemonicParsing="false" text="just finishing shopping" />
+            <CheckBox layoutX="231.0" layoutY="68.0" mnemonicParsing="false" text="visiting the city center" />
+            <CheckBox layoutX="22.0" layoutY="182.0" mnemonicParsing="false" text="romantic date" />
+            <CheckBox layoutX="231.0" layoutY="182.0" mnemonicParsing="false" text="business meeting" />
+            <CheckBox layoutX="22.0" layoutY="215.0" mnemonicParsing="false" text="friends and family meal" />
+            <CheckBox layoutX="22.0" layoutY="262.0" mnemonicParsing="false" text="romantic date" />
+            <CheckBox layoutX="231.0" layoutY="262.0" mnemonicParsing="false" text="romantic date" />
+            <CheckBox layoutX="22.0" layoutY="298.0" mnemonicParsing="false" text="romantic date" />
+            <CheckBox layoutX="231.0" layoutY="298.0" mnemonicParsing="false" text="romantic date" />
+            <CheckBox layoutX="22.0" layoutY="337.0" mnemonicParsing="false" text="romantic date" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

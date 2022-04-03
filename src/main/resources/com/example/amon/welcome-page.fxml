@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="353.0" fitWidth="223.0" layoutY="-54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/amon.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="353.0" fitWidth="223.0" layoutX="-21.0" layoutY="-51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/amon.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="133.0" prefWidth="499.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="25.0" layoutY="183.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Get Help">
+               <effect>
+                  <ColorAdjust brightness="0.21" saturation="0.26" />
+               </effect>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="92.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="240.0" prefHeight="64.0" prefWidth="121.0" text="Hello!">
+               <font>
+                  <Font name="MV Boli" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="66.0" prefHeight="32.0" prefWidth="499.0" text="Are you visiting Timisoara and don’t know where to eat?">
+               <font>
+                  <Font name="MV Boli" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

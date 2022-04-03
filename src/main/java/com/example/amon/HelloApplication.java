@@ -14,7 +14,8 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("amon-view.fxml"));
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("welcome-page.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 620, 350);
         stage.setTitle("Amon");
         stage.setScene(scene);
@@ -30,7 +31,5 @@ public class HelloApplication extends Application {
     public static void main(String[] args) {
 
         launch();
-
-
     }
 }
