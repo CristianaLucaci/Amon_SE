@@ -7,7 +7,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+   fx:controller="com.example.amon.HelloController">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -32,7 +33,7 @@
    <center>
       <AnchorPane prefHeight="133.0" prefWidth="499.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="25.0" layoutY="183.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Get Help">
+            <Button layoutX="25.0" layoutY="183.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Get Help" fx:id="getHelp" onAction="#handleGetHelpClick">
                <effect>
                   <ColorAdjust brightness="0.21" saturation="0.26" />
                </effect>
