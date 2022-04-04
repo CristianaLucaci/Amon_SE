@@ -17,9 +17,11 @@ public class ForwardChaining {
 
         boolean flag = false;
 
-        int[] counter = new int[KnowledgeBase.getRules().size()];
+        int size = KnowledgeBase.getRules().size() / 2;
 
-        for(int i = 0 ; i < KnowledgeBase.getRules().size();i++) {
+        int[] counter = new int[size];
+
+        for(int i = 0 ; i < size;i++) {
             counter[i] = KnowledgeBase.getRules().get(i).getPremises().size();
         }
 
@@ -28,7 +30,7 @@ public class ForwardChaining {
         while(!aux.isEmpty() && !flag) {
 
             String fact = aux.remove(0);
-            for(int i = 0 ; i < KnowledgeBase.getRules().size() ; i++) {
+            for(int i = 0 ; i < size ; i++) {
                 if(KnowledgeBase.getRules().get(i).getPremises().contains(fact)) {
                     counter[i]--;
 
@@ -37,7 +39,8 @@ public class ForwardChaining {
                             flag = true;
                             result = KnowledgeBase.getRules().get(i).getHead();
                         } else {
-                            aux.add(KnowledgeBase.getRules().get(i).getHead());
+                            if(!aux.contains(KnowledgeBase.getRules().get(i).getHead()))
+                                aux.add(KnowledgeBase.getRules().get(i).getHead());
                         }
                     }
                 }

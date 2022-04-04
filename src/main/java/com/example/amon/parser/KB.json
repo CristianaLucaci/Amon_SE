@@ -5,11 +5,11 @@
 			"head": "langa_gara"
 		} ,
 		{
-			"premises": [ "priveliste_spre_rau" , "intalnire_romantica"] ,
+			"premises": [ "priveliste_spre_rau" , "este_grabit"] ,
 			"head": "pe_malul_begai"
 		} ,
 		{
-			"premises": [ "shopping" , "este_intalnire"] ,
+			"premises": [ "shopping" , "este_grabit"] ,
 			"head": "langa_mall"
 		} ,
 		{

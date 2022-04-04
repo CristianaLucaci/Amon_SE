@@ -78,7 +78,8 @@ public class OptionsController {
     public void getFoodPreferance(){
         System.out.println(KnowledgeBase.getFacts());
         if(cb_romanian.isSelected()) {
-            KnowledgeBase.addFact("mancare_traditionala");
+            if(!KnowledgeBase.getFacts().contains("mancare_traditionala"))
+                KnowledgeBase.addFact("mancare_traditionala");
         }else{
             int pos = KnowledgeBase.getFacts().indexOf("mancare_traditionala");//Getting string position
             if(pos >= 0){
@@ -86,6 +87,7 @@ public class OptionsController {
             }
         }
         if(cb_greek.isSelected()) {
+            if(!KnowledgeBase.getFacts().contains("mancare_greceasca"))
             KnowledgeBase.addFact("mancare_greceasca");
         }else{
             int pos = KnowledgeBase.getFacts().indexOf("mancare_greceasca");//Getting string position
@@ -94,6 +96,7 @@ public class OptionsController {
             }
         }
         if(cb_italian.isSelected()) {
+            if(!KnowledgeBase.getFacts().contains("mancare_specific_italienesc"))
             KnowledgeBase.addFact("mancare_specific_italienesc");
         }else{
             int pos = KnowledgeBase.getFacts().indexOf("mancare_specific_italienesc");//Getting string position
@@ -102,6 +105,7 @@ public class OptionsController {
             }
         }
         if(cb_american.isSelected()) {
+            if(!KnowledgeBase.getFacts().contains("mancare_specific_american"))
             KnowledgeBase.addFact("mancare_specific_american");
         }else{
             int pos = KnowledgeBase.getFacts().indexOf("mancare_specific_american");//Getting string position
