@@ -51,7 +51,6 @@ public class OptionsController {
     }
 
     public void hurryState(ActionEvent event) {
-        System.out.println(KnowledgeBase.getFacts());
         if(rBt_hurry_yes.isSelected()) {
             KnowledgeBase.addFact("este_grabit");
         }
@@ -64,19 +63,20 @@ public class OptionsController {
     }
 
     public void getFacts() {
-        System.out.println(KnowledgeBase.getFacts());
         Data.getData();
         Conclusion.initialise();
 
         ForwardChaining.generateConclusion();
         String rezultat = ForwardChaining.getResult();
-        result.setText(rezultat);
+        if("indecisive conclusion".equals(rezultat))
+            result.setText("There isn't a restaurant matching your preferences");
+        else
+            result.setText("Go to " + rezultat);
         resetForm();
         KnowledgeBase.getFacts().removeAll(KnowledgeBase.getFacts());
     }
 
     public void getFoodPreferance(){
-        System.out.println(KnowledgeBase.getFacts());
         if(cb_romanian.isSelected()) {
             if(!KnowledgeBase.getFacts().contains("mancare_traditionala"))
                 KnowledgeBase.addFact("mancare_traditionala");
@@ -116,7 +116,6 @@ public class OptionsController {
     }
 
     public void getVegetarian(){
-        System.out.println(KnowledgeBase.getFacts());
         if(rBt_vegetarian_yes.isSelected()) {
             KnowledgeBase.addFact("mancare_vegetariana");
         }
@@ -129,7 +128,6 @@ public class OptionsController {
     }
 
     public void getSmoking(){
-        System.out.println(KnowledgeBase.getFacts());
         if(rBt_smoking_yes.isSelected()) {
             KnowledgeBase.addFact("fumator");
         }
@@ -142,7 +140,6 @@ public class OptionsController {
     }
 
     public void getPrices(){
-        System.out.println(KnowledgeBase.getFacts());
         if(rBt_prices_yes.isSelected()) {
             KnowledgeBase.addFact("buget_mic");
         }
@@ -155,7 +152,6 @@ public class OptionsController {
     }
 
     public void getLocation(){
-        System.out.println(KnowledgeBase.getFacts());
         if(rBt_center.isSelected()) {
             KnowledgeBase.addFact("vizita_pe_centru");
         }else{
@@ -194,7 +190,6 @@ public class OptionsController {
     }
 
     public void getDate(){
-        System.out.println(KnowledgeBase.getFacts());
         if(rBt_romantic_date.isSelected()) {
             KnowledgeBase.addFact("intalnire_romantica");
         }else{

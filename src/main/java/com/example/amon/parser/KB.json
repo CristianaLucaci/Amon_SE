@@ -21,24 +21,88 @@
 			"head": "Thalia"
 		} ,
 		{
-			"premises": [ "langa_gara" , "intalnire_romantica" , "mancare_specific_italienesc "] ,
-			"head": "Casa_Iosefin"
+			"premises": [ "vizita_pe_centru" , "intalnire_cu_prietenii_si_familia" , "mancare_traditionala", "buget_mic"] ,
+			"head": "Thalia"
 		} ,
 		{
-			"premises": [ "langa_gara" , "intalnire_de_afaceri" , "mancare_traditionala", "mancare_traditionala", "fumator"] ,
+			"premises": [ "merge_cu_trenul" , "intalnire_cu_prietenii_si_familia" , "mancare_traditionala", "buget_mic", "fumator"] ,
+			"head": "Thalia"
+		} ,
+		{
+			"premises": [ "langa_gara" , "intalnire_cu_prietenii_si_familia" , "mancare_specific_italienesc", "buget_mic", "fumator"] ,
+			"head": "Thalia"
+		},
+		{
+			"premises": [ "langa_gara" , "intalnire_romantica" , "mancare_specific_italienesc"] ,
+			"head": "Casa Iosefin"
+		} ,
+		{
+			"premises": [ "merge_cu_trenul" , "intalnire_romantica" , "mancare_specific_italienesc"] ,
+			"head": "Casa Iosefin"
+		} ,
+		{
+			"premises": [ "vizita_pe_centru" , "intalnire_romantica" , "mancare_specific_italienesc", "buget_mic"] ,
+			"head": "Casa Iosefin"
+		} ,
+		{
+			"premises": [ "langa_gara" , "intalnire_de_afaceri" , "mancare_traditionala", "fumator"] ,
 			"head": "Trattoriaccia"
 		} ,
 		{
-			"premises": [ "langa_centrul_orasului" , "intalnire_de_afaceri" , "mancare_traditionala", "mancare_vegetariana", "mancare_specific_italienesc"] ,
-			"head": "Locanda_Del_Corso"
+			"premises": [ "merge_cu_trenul" , "intalnire_de_afaceri" , "mancare_traditionala", "fumator"] ,
+			"head": "Trattoriaccia"
 		} ,
 		{
+			"premises": [ "langa_centrul_orasului" , "intalnire_de_afaceri" , "mancare_traditionala", "mancare_vegetariana"] ,
+			"head": "Locanda Del Corso"
+		} ,
+		{
+			"premises": [ "langa_centrul_orasului" , "intalnire_romantica" , "mancare_traditionala", "mancare_vegetariana"] ,
+			"head": "Locanda Del Corso"
+		},
+		{
+			"premises": [ "langa_centrul_orasului" , "intalnire_de_afaceri" , "mancare_specific_italienesc", "mancare_vegetariana"] ,
+			"head": "Locanda Del Corso"
+		},
+		{
 			"premises": [ "langa_centrul_orasului" , "intalnire_cu_prietenii_si_familia" , "mancare_greceasca", "buget_mic", "fumator"] ,
-			"head": "Papper_Steak_Shake"
+			"head": "Pepper Steak Shake"
+		} ,
+		{
+			"premises": [ "langa_centrul_orasului" , "intalnire_cu_prietenii_si_familia" , "mancare_traditionala", "buget_mic", "fumator"] ,
+			"head": "Pepper Steak Shake"
+		} ,
+		{
+			"premises": [ "langa_centrul_orasului" , "intalnire_cu_prietenii_si_familia" , "mancare_traditionala"] ,
+			"head": "Pepper Steak Shake"
 		} ,
 		{
 			"premises": [ "langa_centrul_orasului" , "intalnire_romantica" , "mancare_specific_american"] ,
-			"head": "Neata_Omlette_Bistro"
+			"head": "Neata Omlette Bistro"
+		} ,
+		{
+			"premises": [ "langa_centrul_orasului" , "intalnire_cu_prietenii_si_familia" , "mancare_specific_american"] ,
+			"head": "Neata Omlette Bistro"
+		} ,
+		{
+			"premises": [ "vizita_pe_centru" , "intalnire_cu_prietenii_si_familia" , "mancare_specific_american"] ,
+			"head": "Neata Omlette Bistro"
+		} ,
+		{
+			"premises": [ "vizita_pe_centru" , "intalnire_romantica" , "mancare_specific_american"] ,
+			"head": "Neata Omlette Bistro"
+		} ,
+		{
+			"premises": [ "merge_cu_trenul" , "intalnire_cu_prietenii_si_familia" , "mancare_specific_american"] ,
+			"head": "Neata Omlette Bistro"
+		} ,
+		{
+			"premises": [ "priveliste_spre_rau" , "intalnire_cu_prietenii_si_familia" , "mancare_specific_american"] ,
+			"head": "Neata Omlette Bistro"
+		} ,
+		{
+			"premises": [ "shopping" , "intalnire_cu_prietenii_si_familia" , "mancare_specific_american"] ,
+			"head": "Neata Omlette Bistro"
 		} ,
 		{
 			"premises": [ "langa_mall" , "intalnire_cu_prietenii_si_familia" , "mancare_traditionala", "fumator"] ,
@@ -50,104 +114,32 @@
 		},
 
 		{
-			"premises": [ "pe_malul_begai" , "intalnire_romantica" ] ,
+			"premises": [ "pe_malul_begai" , "intalnire_romantica", "mancare_traditionala" ] ,
 			"head": "Riviere"
 		},
 		{
-			"premises": [ "pe_malul_begai" , "intalnire_de_afaceri" ] ,
-			"head": "Gradina_Banateana"
-		},
-		{
-			"premises": [ "priveliste_spre_rau", "intalnire_de_afaceri", "mancare_vegetariana" ] ,
+			"premises": [ "pe_malul_begai" , "intalnire_cu_prietenii_si_familia", "mancare_traditionala" ] ,
 			"head": "Riviere"
 		},
 		{
-			"premises": [ "priveliste_spre_rau", "intalnire_romantica", "mancare_traditionala", "mancare_specific_italienesc" ] ,
+			"premises": [ "pe_malul_begai" , "intalnire_cu_prietenii_si_familia", "mancare_specific_italienesc" ] ,
 			"head": "Riviere"
 		},
 		{
-			"premises": ["langa_gara", "intalnire_romantica", "mancare_traditionala", "mancare_vegetariana", "fumator", "buget_mic"] ,
-			"head": "Thalia"
+			"premises": [ "pe_malul_begai" , "intalnire_romantica", "mancare_specific_italienesc" ] ,
+			"head": "Riviere"
 		},
 		{
-			"premises": ["langa_centrul_orasului", "intalnire_romantica", "mancare_traditionala", "mancare_vegetariana", "fumator", "buget_mic"] ,
-			"head": "Papper_Steak_Shake"
+			"premises": [ "priveliste_spre_rau" , "intalnire_romantica", "mancare_specific_italienesc" ] ,
+			"head": "Riviere"
 		},
 		{
-			"premises": ["langa_mall", "intalnire_romantica", "mancare_traditionala", "mancare_vegetariana", "fumator", "buget_mic"] ,
-			"head": "Manufaktura"
+			"premises": [ "pe_malul_begai" , "intalnire_de_afaceri", "mancare_traditionala" ] ,
+			"head": "Gradina Banateana"
 		},
 		{
-			"premises": ["langa_gara", "intalnire_de_afaceri", "mancare_traditionala", "mancare_vegetariana", "fumator", "buget_mic"] ,
-			"head": "Trattoriaccia"
-		},
-		{
-			"premises": ["langa_centrul_orasului", "intalnire_de_afaceri", "mancare_traditionala", "mancare_vegetariana", "fumator", "buget_mic"] ,
-			"head": "Locanda_Del_Corso"
-		},
-		{
-			"premises": ["langa_mall", "intalnire_de_afaceri", "mancare_traditionala", "mancare_vegetariana", "fumator"] ,
-			"head": "Fabrika"
-		},
-		{
-			"premises": ["langa_gara", "intalnire_cu_prietenii_si_familia", "mancare_traditionala", "mancare_vegetariana", "fumator", "buget_mic"] ,
-			"head": "Casa_Iosefin"
-		},
-		{
-			"premises": ["langa_centrul_orasului", "intalnire_cu_prietenii_si_familia", "mancare_traditionala", "mancare_vegetariana", "fumator", "buget_mic"] ,
-			"head": "Neata_Omlette_Bistro"
-		},
-		{
-			"premises": ["langa_mall", "intalnire_de_afaceri", "intalnire_cu_prietenii_si_familia", "mancare_vegetariana", "fumator", "buget_mic"] ,
-			"head": "Manufaktura"
-		},
-		{
-			"premises": ["langa_mall",  "intalnire_cu_prietenii_si_familia", "mancare_greceasca", "mancare_vegetariana", "buget_mic"] ,
-			"head": "Manufaktura"
-		},
-		{
-			"premises": ["intalnire_cu_prietenii_si_familia", "mancare_traditionala", "mancare_vegetariana", "fumator", "buget_mic"] ,
-			"head": "Trattoriaccia"
-		},
-		{
-			"premises": ["intalnire_romantica", "mancare_traditionala", "mancare_vegetariana", "fumator", "buget_mic"] ,
-			"head": "Locanda_Del_Corso"
-		},
-		{
-			"premises": ["intalnire_de_afaceri", "mancare_traditionala", "mancare_vegetariana", "fumator"] ,
-			"head": "Fabrika"
-		},
-		{
-			"premises": ["intalnire_cu_prietenii_si_familia", "mancare_traditionala", "mancare_vegetariana", "fumator", "buget_mic"] ,
-			"head": "Casa_Iosefin"
-		},
-		{
-			"premises": ["intalnire_cu_prietenii_si_familia", "mancare_traditionala", "mancare_vegetariana", "fumator", "buget_mic"] ,
-			"head": "Neata_Omlette_Bistro"
-		},
-		{
-			"premises": ["intalnire_de_afaceri", "intalnire_cu_prietenii_si_familia", "mancare_vegetariana", "fumator", "buget_mic"] ,
-			"head": "Manufaktura"
-		},
-		{
-			"premises": ["shopping", "intalnire_cu_prietenii_si_familia", "buget_mic"] ,
-			"head": "Manufaktura"
-		},
-		{
-			"premises": ["vizita_pe_centru", "intalnire_romantica", "mancare_traditionala", "mancare_specific_italienesc", "mancare_greceasca", "mancare_vegetariana"] ,
-			"head": "Trattoriaccia"
-		},
-		{
-			"premises": ["priveliste_spre_rau", "intalnire_romantica", "mancare_traditionala", "mancare_vegetariana", "buget_mic"] ,
-			"head": "Gradina_Banateana"
-		},
-		{
-			"premises": ["vizita_pe_centru", "intalnire_de_afaceri", "mancare_greceasca", "fumator", "buget_mic"] ,
-			"head": "Papper_Steak_Shake"
-		},
-		{
-			"premises": ["vizita_pe_centru","intalnire_romantica", "mancare_traditionala", "mancare_specific_italienesc"] ,
-			"head": "Locanda_Del_Corso"
+			"premises": [ "priveliste_spre_rau" , "intalnire_de_afaceri", "mancare_traditionala" ] ,
+			"head": "Gradina Banateana"
 		}
 	]
 }

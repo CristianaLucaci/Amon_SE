@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
@@ -10,7 +14,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<SplitPane dividerPositions="0.342809364548495" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.amon.OptionsController">
+<SplitPane dividerPositions="0.342809364548495" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.amon.OptionsController">
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="648.0" prefWidth="201.0">
          <children>
@@ -58,16 +62,16 @@
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="435.0">
          <children>
             <Button fx:id="submitButton" layoutX="135.0" layoutY="487.0" mnemonicParsing="false" onAction="#getFacts" prefHeight="36.0" prefWidth="95.0" text="Submit" />
-            <RadioButton fx:id="rBt_hurry_yes" layoutX="25.0" layoutY="24.0" mnemonicParsing="false" onAction="#hurryState" text="yes">
+            <RadioButton fx:id="rBt_hurry_yes" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#hurryState" text="yes">
                <toggleGroup>
                   <ToggleGroup fx:id="hurry" />
                </toggleGroup></RadioButton>
             <RadioButton fx:id="rBt_hurry_no" layoutX="97.0" layoutY="24.0" mnemonicParsing="false" onAction="#hurryState" text="no" toggleGroup="$hurry" />
-            <CheckBox fx:id="cb_romanian" layoutX="22.0" layoutY="262.0" mnemonicParsing="false" onAction="#getFoodPreferance" text="Romanian traditional food" />
-            <CheckBox fx:id="cb_italian" layoutX="231.0" layoutY="262.0" mnemonicParsing="false" onAction="#getFoodPreferance" text="Italian food" />
-            <CheckBox fx:id="cb_chinese" layoutX="22.0" layoutY="298.0" mnemonicParsing="false" onAction="#getFoodPreferance" text="Chinese food" />
-            <CheckBox fx:id="cb_greek" layoutX="231.0" layoutY="298.0" mnemonicParsing="false" onAction="#getFoodPreferance" text="Greek Food" />
-            <CheckBox fx:id="cb_american" layoutX="22.0" layoutY="337.0" mnemonicParsing="false" onAction="#getFoodPreferance" text="American Food" />
+            <CheckBox fx:id="cb_romanian" layoutX="17.0" layoutY="254.0" mnemonicParsing="false" onAction="#getFoodPreferance" text="Romanian traditional food" />
+            <CheckBox fx:id="cb_italian" layoutX="229.0" layoutY="254.0" mnemonicParsing="false" onAction="#getFoodPreferance" text="Italian food" />
+            <CheckBox fx:id="cb_chinese" layoutX="16.0" layoutY="290.0" mnemonicParsing="false" onAction="#getFoodPreferance" text="Chinese food" />
+            <CheckBox fx:id="cb_greek" layoutX="229.0" layoutY="290.0" mnemonicParsing="false" onAction="#getFoodPreferance" text="Greek Food" />
+            <CheckBox fx:id="cb_american" layoutX="17.0" layoutY="324.0" mnemonicParsing="false" onAction="#getFoodPreferance" text="American Food" />
             <RadioButton fx:id="rBt_vegetarian_yes" layoutX="22.0" layoutY="376.0" mnemonicParsing="false" onAction="#getVegetarian" text="yes">
                <toggleGroup>
                   <ToggleGroup fx:id="vegetarian" />
@@ -83,20 +87,23 @@
                   <ToggleGroup fx:id="prices" />
                </toggleGroup></RadioButton>
             <RadioButton fx:id="rBt_prices_no" layoutX="93.0" layoutY="447.0" mnemonicParsing="false" onAction="#getPrices" text="no" toggleGroup="$prices" />
-            <RadioButton fx:id="rBt_train_station" layoutX="22.0" layoutY="68.0" mnemonicParsing="false" onAction="#getLocation" text="at the train station in Timisoara">
+            <RadioButton fx:id="rBt_train_station" layoutX="14.0" layoutY="81.0" mnemonicParsing="false" onAction="#getLocation" prefHeight="17.0" prefWidth="193.0" text="at the train station in Timisoara">
                <toggleGroup>
                   <ToggleGroup fx:id="location" />
                </toggleGroup></RadioButton>
-            <RadioButton fx:id="rBt_center" layoutX="231.0" layoutY="68.0" mnemonicParsing="false" onAction="#getLocation" text="visiting the city center" toggleGroup="$location" />
-            <RadioButton fx:id="rBt_shopping" layoutX="23.0" layoutY="114.0" mnemonicParsing="false" onAction="#getLocation" text="just finished shopping" toggleGroup="$location" />
+            <RadioButton fx:id="rBt_center" layoutX="229.0" layoutY="79.0" mnemonicParsing="false" onAction="#getLocation" prefHeight="20.0" prefWidth="139.0" text="visiting the city center" toggleGroup="$location" />
+            <RadioButton fx:id="rBt_shopping" alignment="CENTER_LEFT" layoutX="16.0" layoutY="114.0" mnemonicParsing="false" onAction="#getLocation" prefHeight="17.0" prefWidth="145.0" text="just finished shopping" toggleGroup="$location" />
             <RadioButton fx:id="rBt_river" layoutX="230.0" layoutY="114.0" mnemonicParsing="false" onAction="#getLocation" text="walking by the river" toggleGroup="$location" />
-            <RadioButton fx:id="rBt_romantic_date" layoutX="20.0" layoutY="165.0" mnemonicParsing="false" onAction="#getDate" text="romantic date">
+            <RadioButton fx:id="rBt_romantic_date" layoutX="20.0" layoutY="157.0" mnemonicParsing="false" onAction="#getDate" text="romantic date">
                <toggleGroup>
                   <ToggleGroup fx:id="date" />
                </toggleGroup></RadioButton>
-            <RadioButton fx:id="rBt_business_meeting" layoutX="226.0" layoutY="165.0" mnemonicParsing="false" onAction="#getDate" text="business meeting" toggleGroup="$date" />
-            <RadioButton fx:id="rBt_family_meal" layoutX="19.0" layoutY="207.0" mnemonicParsing="false" onAction="#getDate" text="friends and family meal" toggleGroup="$date" />
-            <TextArea fx:id="result" layoutX="83.0" layoutY="550.0" prefHeight="50.0" prefWidth="200.0" />
+            <RadioButton fx:id="rBt_business_meeting" layoutX="229.0" layoutY="157.0" mnemonicParsing="false" onAction="#getDate" text="business meeting" toggleGroup="$date" />
+            <RadioButton fx:id="rBt_family_meal" layoutX="21.0" layoutY="197.0" mnemonicParsing="false" onAction="#getDate" text="friends and family meal" toggleGroup="$date" />
+            <TextArea fx:id="result" layoutX="52.0" layoutY="550.0" prefHeight="50.0" prefWidth="277.0">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font></TextArea>
          </children></AnchorPane>
   </items>
 </SplitPane>
